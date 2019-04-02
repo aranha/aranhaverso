@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		<mapping class="br.com.gastronomia.model.Usuario" />
+		<mapping class="br.com.gastronomia.model.Ingrediente" />
+		<mapping class="br.com.gastronomia.model.Receita" />
+		<mapping class="br.com.gastronomia.model.GrupoReceitas" />
+		<mapping class="br.com.gastronomia.model.Atributo" />
+        <mapping class="br.com.gastronomia.model.IngredienteAtributo" />
+        <mapping class="br.com.gastronomia.model.IngredienteAtributoId" />
+		<mapping class="br.com.gastronomia.model.ReceitaIngrediente" />
+		<mapping class="br.com.gastronomia.model.ReceitaIngredienteId" />
+		<mapping class="br.com.gastronomia.model.Imagem" />
+		<mapping class="br.com.gastronomia.model.ReceitaImagem" />
+		<mapping class="br.com.gastronomia.model.ReceitaImagemId" />
+		<mapping class="br.com.gastronomia.model.Nota" />
+
+
+		<!--Dietoterapia-->
+		<mapping class="br.com.gastronomia.model.dietoterapia.Paciente" />
+		<mapping class="br.com.gastronomia.model.dietoterapia.AtendimentoNutricional"/>
+
+
+	</session-factory>
+</hibernate-configuration>

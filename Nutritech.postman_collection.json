@@ -1,0 +1,143 @@
+{
+	"info": {
+		"name": "Nutritech",
+		"_postman_id": "980422af-9d63-576c-a491-5712d54e35fc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dietoterapia",
+			"item": [
+				{
+					"name": "Paciente",
+					"item": [
+						{
+							"name": "Criar Paciente",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nome\": \"Leonardo Vieira\",\n\t\"sexo\": \"M\",\n\t\"dataNascimento\": \"1995-07-13\",\n\t\"restricaoAlimentar\": \"Pastel\"\n}"
+								},
+								"url": {
+									"raw": "localhost:8080/pacientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter Todos os Pacientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/pacientes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Obter um paciente pelo ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/pacientes/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar um paciente",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/pacientes/update",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes",
+										"update"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar um paciente(desativar)",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {},
+								"url": {
+									"raw": "localhost:8080/pacientes/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"pacientes",
+										"4"
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

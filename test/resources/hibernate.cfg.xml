@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property nome="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property nome="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property nome="hibernate.show_sql">true</property>
+		<property nome="hibernate.format_sql">true</property>
+		<property nome="hbm2ddl.auto">update</property>
+		<mapping class="br.com.gastronomia.model.Usuario" />
+        <mapping class="br.com.gastronomia.model.IngredienteAtributo" />
+        <mapping class="br.com.gastronomia.model.IngredienteAtributoId" />
+	</session-factory>
+</hibernate-configuration>

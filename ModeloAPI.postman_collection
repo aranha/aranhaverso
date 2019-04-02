@@ -1,0 +1,98 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ModeloAPI",
+		"_postman_id": "bbcbbc1d-8c4a-d54f-656f-d74f95468833",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Works",
+			"request": {
+				"url": "http://localhost:8282/modeloapi",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ListUsers",
+			"request": {
+				"url": "http://localhost:8282/modeloapi",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "AddUser",
+			"request": {
+				"url": "http://localhost:8282/modeloapi/users/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJpZFwiOjEsXCJjcGZcIjpcIjYxNjQyMDk2MDkxXCIsXCJlbWFpbFwiOlwiY2Fzc2lvd3RAZ21haWwuY29tXCIsXCJuYW1lXCI6XCJDYXNzaW9cIixcInBhc3N3b3JkXCI6XCIyMDJjYjk2MmFjNTkwNzViOTY0YjA3MTUyZDIzNGI3MFwiLFwicGhvbmVcIjpudWxsLFwicm9sZVwiOlwiYW5hbHlzdFwiLFwiYWN0aXZlXCI6dHJ1ZSxcInZhbGlkXCI6dHJ1ZX0iLCJpYXQiOjE1MDM0MzI3NjMsImV4cCI6MTUwMzc3ODM2M30.LzftHFst4LjDKiGObhz_g30nAe7EWUPjkqSnSS8O1L6a4h8OqWsM1w7eSVztLsjcjKdYlbFNiLdtzUjI_seiMw",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"cpf\": 111111111111,\n    \"email\": \"pedro@gmail.com\",\n    \"name\": \"Pedro\",\n    \"password\": \"cinco\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Token",
+			"request": {
+				"url": "http://localhost:8282/modeloapi/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": 61642096091,\n    \"password\": \"123\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Token  - Homo",
+			"request": {
+				"url": "http://localhost:8282/modeloapi/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cpf\": 888888888888,\n    \"password\": \"cinco\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
