@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pauloaranha_aranhaverso&metric=alert_status)](https://sonarcloud.io/dashboard?id=pauloaranha_aranhaverso) 
+[![Build Status](https://travis-ci.org/pauloaranha/aranhaverso.svg?branch=master)](https://travis-ci.org/pauloaranha/aranhaverso)
 
 # Dietoterapia - Backend
 
