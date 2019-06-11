@@ -37,7 +37,7 @@ public class UsuarioBO {
 	}
 
 	public boolean createUser(Usuario usuario) throws NoSuchAlgorithmException, ValidationException {
-		if (usuario != null || !usuario.getSenha().isEmpty()) {
+		if (usuario != null && !usuario.getSenha().isEmpty()) {
 			String encryptedPassword = EncryptUtil.encrypt2(usuario.getSenha());
 			usuario.setSenha(encryptedPassword);
 

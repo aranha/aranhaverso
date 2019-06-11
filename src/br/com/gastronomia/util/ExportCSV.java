@@ -20,9 +20,7 @@ import java.util.Map;
 public class ExportCSV {
 
 	private static void generateCsvFile(String sFileName) {
-		try {
-			FileWriter writer = new FileWriter(sFileName);
-
+		try (FileWriter writer = new FileWriter(sFileName)){
 			writer.append("DisplayName");
 			writer.append(',');
 			writer.append("Age");
